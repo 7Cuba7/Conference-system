@@ -10,7 +10,7 @@ use Illuminate\Http\RedirectResponse;
 class AuthController extends Controller
 {
     /**
-     * login form
+     * Show login form
      *
      * @return View
      */
@@ -47,7 +47,7 @@ class AuthController extends Controller
     }
 
     /**
-     * logout request
+     * Handle logout request
      *
      * @param Request $request
      * @return RedirectResponse

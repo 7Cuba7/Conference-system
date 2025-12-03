@@ -15,13 +15,13 @@ class AdminMiddleware
      */
     public function handle(Request $request, Closure $next): Response
     {
-        // if user is authenticated
+        // Check if user is authenticated
         if (!auth()->check()) {
             return redirect()->route('login')
                 ->with('error', __('messages.login_required'));
         }
 
-        // if user is administrator
+        // Check if user is administrator
         if (!auth()->user()->isAdmin()) {
             abort(403, __('messages.unauthorized_action'));
         }

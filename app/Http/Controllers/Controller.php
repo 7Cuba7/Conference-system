@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
-use Illuminate\Foundation\Validation\ValidatesRequests;
-use Illuminate\Routing\Controller as BaseController;
-
-class Controller extends BaseController
+/**
+ * Base Controller
+ *
+ * All application controllers extend this base controller.
+ * This follows PSR-12 coding standards and Laravel best practices.
+ */
+abstract class Controller
 {
-    use AuthorizesRequests, ValidatesRequests;
+    //
 }

@@ -16,7 +16,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-
+        // Create administrator user
         User::create([
             'name' => 'Admin',
             'email' => 'admintest',
@@ -24,7 +24,7 @@ class DatabaseSeeder extends Seeder
             'is_admin' => true,
         ]);
 
-
+        // Create regular user for testing
         User::create([
             'name' => 'User',
             'email' => 'usertest',
