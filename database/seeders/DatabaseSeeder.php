@@ -11,12 +11,10 @@ class DatabaseSeeder extends Seeder
 {
     use WithoutModelEvents;
 
-    /**
-     * Seed the application's database.
-     */
+
     public function run(): void
     {
-        // Create administrator user
+
         User::create([
             'name' => 'Admin',
             'email' => 'admintest',
@@ -24,7 +22,7 @@ class DatabaseSeeder extends Seeder
             'is_admin' => true,
         ]);
 
-        // Create regular user for testing
+
         User::create([
             'name' => 'User',
             'email' => 'usertest',
@@ -32,7 +30,7 @@ class DatabaseSeeder extends Seeder
             'is_admin' => false,
         ]);
 
-        // Seed conferences
+
         $this->call(ConferenceSeeder::class);
     }
 }

@@ -1,14 +1,14 @@
 <?php
 
 return [
-    // Application
-    'app_name' => 'Konferencijų Sistema',
+
+    'app_name' => 'Konferencijų sistema',
     'welcome' => 'Sveiki',
     'home' => 'Pradžia',
     'logout' => 'Atsijungti',
     'login' => 'Prisijungti',
 
-    // Conferences
+
     'conferences' => 'Konferencijos',
     'conference' => 'Konferencija',
     'conferences_list' => 'Konferencijų sąrašas',
@@ -18,7 +18,7 @@ return [
     'delete_conference' => 'Ištrinti konferenciją',
     'no_conferences' => 'Konferencijų nerasta',
 
-    // Form fields
+
     'title' => 'Pavadinimas',
     'description' => 'Aprašymas',
     'date' => 'Data',
@@ -31,7 +31,7 @@ return [
     'remember_me' => 'Prisiminti mane',
     'today' => 'šiandiena',
 
-    // Actions
+
     'create' => 'Sukurti',
     'edit' => 'Redaguoti',
     'delete' => 'Ištrinti',
@@ -41,7 +41,7 @@ return [
     'view' => 'Peržiūrėti',
     'actions' => 'Veiksmai',
 
-    // Messages
+
     'login_success' => 'Sėkmingai prisijungėte!',
     'login_failed' => 'Neteisingi prisijungimo duomenys.',
     'login_required' => 'Turite būti prisijungę.',
@@ -52,11 +52,11 @@ return [
     'conference_updated' => 'Konferencija sėkmingai atnaujinta!',
     'conference_deleted' => 'Konferencija sėkmingai ištrinta!',
 
-    // Login page
+
     'login_to_account' => 'Prisijungti prie paskyros',
     'enter_credentials' => 'Įveskite savo prisijungimo duomenis',
 
-    // Misc
+
     'all_fields_required' => 'Visi laukai privalomi',
     'details' => 'Detalės',
 ];

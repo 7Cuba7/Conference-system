@@ -9,22 +9,13 @@ use Illuminate\Http\RedirectResponse;
 
 class AuthController extends Controller
 {
-    /**
-     * Show login form
-     *
-     * @return View
-     */
+
     public function showLoginForm(): View
     {
         return view('auth.login');
     }
 
-    /**
-     * Handle login request
-     *
-     * @param Request $request
-     * @return RedirectResponse
-     */
+
     public function login(Request $request): RedirectResponse
     {
         $credentials = $request->validate([
@@ -46,12 +37,7 @@ class AuthController extends Controller
         ])->onlyInput('email');
     }
 
-    /**
-     * Handle logout request
-     *
-     * @param Request $request
-     * @return RedirectResponse
-     */
+
     public function logout(Request $request): RedirectResponse
     {
         Auth::logout();

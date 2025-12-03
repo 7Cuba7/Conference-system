@@ -6,20 +6,14 @@ use Illuminate\Foundation\Http\FormRequest;
 
 class ConferenceRequest extends FormRequest
 {
-    /**
-     * Determine if the user is authorized to make this request.
-     */
+
     public function authorize(): bool
     {
-        // Only authenticated users can create/update conferences
+
         return auth()->check();
     }
 
-    /**
-     * Get the validation rules that apply to the request.
-     *
-     * @return array<string, \Illuminate\Contracts\Validation\ValidationRule|array<mixed>|string>
-     */
+
     public function rules(): array
     {
         return [
@@ -32,11 +26,7 @@ class ConferenceRequest extends FormRequest
         ];
     }
 
-    /**
-     * Get custom validation messages
-     *
-     * @return array<string, string>
-     */
+
     public function messages(): array
     {
         return [
