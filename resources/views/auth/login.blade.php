@@ -10,7 +10,7 @@
                 <h4 class="mb-0">{{ __('messages.login_to_account') }}</h4>
             </div>
             <div class="card-body">
-                <p class="text-muted">{{ __('messages.enter_credentials') }}</p>
+
 
                 <form method="POST" action="{{ route('login.post') }}">
                     @csrf

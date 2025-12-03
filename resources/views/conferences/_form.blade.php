@@ -82,9 +82,7 @@
     @enderror
 </div>
 
-<div class="alert alert-info">
-    {{ __('messages.all_fields_required') }}
-</div>
+
 
 <!-- Form Actions -->
 <div class="d-flex justify-content-between">
